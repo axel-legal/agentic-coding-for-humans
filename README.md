@@ -1,6 +1,6 @@
 # dev-for-non-tech
 
-Plugin de Claude Code para acompañar a colaboradores **no técnicos** (abogados,
+Plugin interno de Axel. Acompaña a colaboradores **no técnicos** (abogados,
 médicos, cualquier profesional sin background de desarrollo) que trabajan sobre
 un repositorio de git con ayuda de Claude Code.
 
@@ -25,7 +25,7 @@ descubrirlo después.
 ## Instalación
 
 ```
-/plugin marketplace add <ruta-o-repo-de-este-plugin>
+/plugin marketplace add ~/path/to/dev-for-non-tech
 /plugin install dev-for-non-tech
 ```
 
