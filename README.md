@@ -34,34 +34,38 @@ skill sola cuando detecta la situación (el usuario dice que no es programador,
 hay una operación de git de por medio, etc.) — no hace falta invocarla por
 nombre, aunque también se puede pedir explícitamente.
 
-### Desde Claude Code (CLI)
+### Para cualquiera (repo público, no hace falta pertenecer a Axel)
 
-Requiere acceso git al repo (SSH o token — el mismo usuario de GitHub tiene que
-estar en el team `Legal` de la org `axel-legal`, o ser Owner):
-
+**Claude Code (CLI) — cualquier plan:**
 ```
 /plugin marketplace add axel-legal/agentic-coding-for-humans
 /plugin install agentic-coding-for-humans
 ```
 
-### Desde Claude Desktop
+**Claude Desktop, sin organización conectada:** panel izquierdo → **Customize**
+→ **Skills** → agregar como plugin personal apuntando al repo. Esta vía funciona
+de forma confiable con repos públicos como este.
 
-Requiere **plan Claude Team o Enterprise** (no funciona en Personal/Pro). Es dos
-partes — la primera la hace un admin una sola vez, la segunda la hace cada
-usuario final.
+**Sin pasar por "plugin" en absoluto:** cloná el repo y copiá la carpeta
+`skills/explain-before-acting/` a `~/.claude/skills/` (o el equivalente de tu
+agente — Codex, OpenCode, etc. leen el mismo formato `SKILL.md`). Claude la
+detecta sola, sin necesidad de marketplace.
 
-**Admin (una vez):**
+### Instalación automática para todo el equipo de Axel (Claude Desktop, plan Team/Enterprise)
+
+Esta vía es opcional — sirve para que el plugin aparezca solo, sin que cada
+persona lo instale a mano. Requiere **plan Claude Team o Enterprise** (no
+Personal/Pro) y la hace un admin de la organización, una sola vez:
+
 1. Instalar la Claude GitHub App en el repo: https://github.com/apps/claude/installations
    → seleccionar la org `axel-legal` → autorizar el repo `agentic-coding-for-humans`.
 2. En Claude Desktop → **Organization settings** → pestaña **Plugins** → **Add
    plugins** → GitHub → ingresar `axel-legal/agentic-coding-for-humans`.
 3. Elegir visibilidad: **"Installed by default"** (aparece solo para todo el
    equipo, recomendado para colaboradores no técnicos) o **"Available for
-   install"** (cada quien lo instala si quiere).
-
-**Usuario final (solo si se eligió "Available for install"):**
-4. Claude Desktop → panel izquierdo → **Customize** → **Skills** → aparece bajo
-   "Organization plugins" → click en `+` para instalar.
+   install"** (cada quien lo instala si quiere — en ese caso, cada usuario lo
+   activa desde Claude Desktop → **Customize** → **Skills** → "Organization
+   plugins" → `+`).
 
 Fuentes: [Manage plugins for your organization](https://support.claude.com/en/articles/13837433-manage-plugins-for-your-organization),
 [Create and distribute a plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces.md),
