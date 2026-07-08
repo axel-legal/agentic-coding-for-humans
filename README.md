@@ -34,38 +34,35 @@ skill sola cuando detecta la situación (el usuario dice que no es programador,
 hay una operación de git de por medio, etc.) — no hace falta invocarla por
 nombre, aunque también se puede pedir explícitamente.
 
-### Para cualquiera (repo público, no hace falta pertenecer a Axel)
+### Individual (cualquier plan de Claude)
 
-**Claude Code (CLI) — cualquier plan:**
+**Claude Code (CLI):**
 ```
 /plugin marketplace add axel-legal/agentic-coding-for-humans
 /plugin install agentic-coding-for-humans
 ```
 
-**Claude Desktop, sin organización conectada:** panel izquierdo → **Customize**
-→ **Skills** → agregar como plugin personal apuntando al repo. Esta vía funciona
-de forma confiable con repos públicos como este.
+**Claude Desktop:** panel izquierdo → **Customize** → **Skills** → agregar como
+plugin personal apuntando al repo.
 
 **Sin pasar por "plugin" en absoluto:** cloná el repo y copiá la carpeta
 `skills/explain-before-acting/` a `~/.claude/skills/` (o el equivalente de tu
 agente — Codex, OpenCode, etc. leen el mismo formato `SKILL.md`). Claude la
 detecta sola, sin necesidad de marketplace.
 
-### Instalación automática para todo el equipo de Axel (Claude Desktop, plan Team/Enterprise)
+### Organización (plan Claude Team o Enterprise)
 
-Esta vía es opcional — sirve para que el plugin aparezca solo, sin que cada
-persona lo instale a mano. Requiere **plan Claude Team o Enterprise** (no
-Personal/Pro) y la hace un admin de la organización, una sola vez:
+Para que el plugin aparezca instalado solo, sin que cada persona lo agregue a
+mano. Lo hace un admin de la organización, una sola vez, desde Claude Desktop:
 
 1. Instalar la Claude GitHub App en el repo: https://github.com/apps/claude/installations
-   → seleccionar la org `axel-legal` → autorizar el repo `agentic-coding-for-humans`.
-2. En Claude Desktop → **Organization settings** → pestaña **Plugins** → **Add
+   → seleccionar la organización → autorizar el repo `axel-legal/agentic-coding-for-humans`.
+2. Claude Desktop → **Organization settings** → pestaña **Plugins** → **Add
    plugins** → GitHub → ingresar `axel-legal/agentic-coding-for-humans`.
 3. Elegir visibilidad: **"Installed by default"** (aparece solo para todo el
-   equipo, recomendado para colaboradores no técnicos) o **"Available for
-   install"** (cada quien lo instala si quiere — en ese caso, cada usuario lo
-   activa desde Claude Desktop → **Customize** → **Skills** → "Organization
-   plugins" → `+`).
+   equipo — recomendado para colaboradores no técnicos) o **"Available for
+   install"** (cada quien lo instala si quiere — desde Claude Desktop →
+   **Customize** → **Skills** → "Organization plugins" → `+`).
 
 Fuentes: [Manage plugins for your organization](https://support.claude.com/en/articles/13837433-manage-plugins-for-your-organization),
 [Create and distribute a plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces.md),
