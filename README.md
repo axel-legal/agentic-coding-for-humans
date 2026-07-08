@@ -1,4 +1,4 @@
-# dev-for-non-tech
+# agentic-coding-for-humans
 
 Plugin interno de Axel. Acompaña a colaboradores **no técnicos** (abogados,
 médicos, cualquier profesional sin background de desarrollo) que empiezan a usar
@@ -30,8 +30,8 @@ colaboradores — en vez de descubrirlo después.
 ## Instalación
 
 ```
-/plugin marketplace add ~/path/to/dev-for-non-tech
-/plugin install dev-for-non-tech
+/plugin marketplace add ~/path/to/agentic-coding-for-humans
+/plugin install agentic-coding-for-humans
 ```
 
 Al usarse en cualquier proyecto con un colaborador no técnico, Claude activa la

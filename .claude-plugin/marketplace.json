@@ -1,11 +1,11 @@
 {
-  "name": "dev-for-non-tech",
+  "name": "agentic-coding-for-humans",
   "owner": {
     "name": "Axel"
   },
   "plugins": [
     {
-      "name": "dev-for-non-tech",
+      "name": "agentic-coding-for-humans",
       "source": "./",
       "description": "Guía a colaboradores no técnicos que empiezan a usar la terminal, Claude Code y git/GitHub — lenguaje simple, freno antes de acciones irreversibles, lista viva de errores ya cometidos."
     }
