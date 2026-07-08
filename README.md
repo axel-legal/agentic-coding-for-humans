@@ -12,7 +12,7 @@ colaboradores — en vez de descubrirlo después.
 
 ## Qué incluye
 
-- **`skills/pair-with-non-technical/`** — la skill principal: cubre los primeros
+- **`skills/explain-before-acting/`** — la skill principal: cubre los primeros
   pasos tanto en terminal como en Claude Desktop (pestaña Code) — qué es un
   comando, qué significa el cartel de permiso en cada entorno, cómo salir sin
   miedo — y traduce cada operación de git a lenguaje llano antes de ejecutarla,

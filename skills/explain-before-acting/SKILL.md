@@ -1,5 +1,5 @@
 ---
-name: pair-with-non-technical
+name: explain-before-acting
 description: >
   Guía cómo trabajar con la terminal, Claude Code y git/GitHub cuando el
   colaborador que está del otro lado (o vos mismo) no tiene background técnico —
