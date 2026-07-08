@@ -10,7 +10,8 @@ simple, y cuándo importa que lo sepa.
 momento dado, con una nota de qué cambió y por qué.
 **Cuándo importa:** cada commit queda guardado para siempre en el historial —
 por eso no se debe meter ahí nada que no se quiera que quede registrado
-permanentemente (ver `errores-conocidos.md`, punto 1 y 2).
+permanentemente (notas de sesión, datos personales, etc. — ver la sección
+"Categorías de riesgo a vigilar" del `SKILL.md`).
 
 ## push
 **Qué es en simple:** subir tus "fotos" (commits) guardadas en tu computadora al
@@ -57,7 +58,7 @@ los subas al repositorio compartido, ignoralos".
 **Cuándo importa:** es el lugar correcto para notas personales, configuración
 local de la máquina, o cualquier cosa que no deba compartirse — pero ojo: lo que
 ya se había subido ANTES de agregarlo al `.gitignore` sigue estando en el
-historial; agregarlo ahí no borra lo viejo (ver `errores-conocidos.md`, punto 1).
+historial; agregarlo ahí no borra lo viejo.
 
 ## repositorio local-only / carpeta ignorada
 **Qué es en simple:** una carpeta que existe solo en tu computadora — nadie más

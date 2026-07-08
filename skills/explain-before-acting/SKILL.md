@@ -4,19 +4,17 @@ description: >
   Guía cómo trabajar con la terminal, Claude Code y git/GitHub cuando el
   colaborador que está del otro lado (o vos mismo) no tiene background técnico —
   marketing, operaciones, finanzas, legal, o cualquier otra área sin experiencia
-  de desarrollo. Traduce
-  cada comando u operación a lenguaje simple antes de ejecutarla, frena y explica
-  antes de cualquier acción irreversible o que afecte a otros colaboradores, y
-  aplica una lista viva de errores ya cometidos (`references/errores-conocidos.md`)
-  para no repetirlos. Úsala cuando el usuario mencione que no es técnico/programador,
-  que está empezando a usar Claude Code (en terminal o en la pestaña Code de
-  Claude Desktop) por primera vez, que está aprendiendo git, cuando el repo tiene
-  colaboradores no técnicos, o antes de comandos/commits/pushes en cualquier
-  proyecto donde esto aplique.
+  de desarrollo. Traduce cada comando u operación a lenguaje simple antes de
+  ejecutarla, y frena y explica antes de cualquier acción irreversible o que
+  afecte a otros colaboradores. Úsala cuando el usuario mencione que no es
+  técnico/programador, que está empezando a usar Claude Code (en terminal o en
+  la pestaña Code de Claude Desktop) por primera vez, que está aprendiendo git,
+  cuando el repo tiene colaboradores no técnicos, o antes de
+  comandos/commits/pushes en cualquier proyecto donde esto aplique.
 user-invocable: true
 ---
 
-# Acompañar a un colaborador no técnico
+# Explicar antes de actuar
 
 Esta skill no enseña a programar — enseña a **no asumir** que quien está del otro
 lado entiende jerga de terminal/git/GitHub, y a **frenar antes de lo irreversible**
@@ -141,15 +139,10 @@ Reglas de traducción:
   términos que se repiten (force-push, rebase, merge, branch, .gitignore, etc.) —
   agregale una entrada nueva cuando expliques un término que no está ahí todavía.
 
-## Checklist de errores ya conocidos
+## Categorías de riesgo a vigilar
 
-Antes de commitear, pushear, o mover archivos, repasá
-`references/errores-conocidos.md` — es una lista viva de errores reales ya
-cometidos en sesiones anteriores con colaboradores no técnicos, para no repetirlos.
-Si en esta sesión aparece un error nuevo que no está en la lista, agregalo ahí
-(generalizado, sin nombres ni datos del caso concreto) al cerrar la sesión.
-
-Resumen de las categorías más comunes (detalle y ejemplos en el archivo):
+Antes de commitear, pushear, o mover archivos, tené presentes estas categorías
+—son los patrones donde más se pierde el control sin querer:
 1. Notas de trabajo/continuidad de sesión commiteadas por accidente.
 2. Datos personales o sensibles (nombres reales, rutas de máquina de otra persona,
    incidentes internos) metidos en archivos versionados sin necesidad.

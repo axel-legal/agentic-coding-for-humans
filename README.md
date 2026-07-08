@@ -15,17 +15,12 @@ colaboradores — en vez de descubrirlo después.
 - **`skills/explain-before-acting/`** — la skill principal: cubre los primeros
   pasos tanto en terminal como en Claude Desktop (pestaña Code) — qué es un
   comando, qué significa el cartel de permiso en cada entorno, cómo salir sin
-  miedo — y traduce cada operación de git a lenguaje llano antes de ejecutarla,
-  aplicando una lista viva de errores ya cometidos para no repetirlos.
+  miedo — y traduce cada operación de git a lenguaje llano antes de ejecutarla.
 - **`references/glosario-cli.md`** — banco de traducciones a lenguaje simple para
   los términos de terminal/Claude Code que más se repiten (comando, flag, ruta,
   sesión, permisos, proceso, etc.).
 - **`references/glosario-git.md`** — lo mismo para los términos de git que más se
   repiten (push, force-push, rebase, branch, .gitignore, etc.).
-- **`references/errores-conocidos.md`** — catálogo vivo de errores reales ya
-  cometidos en sesiones con colaboradores no técnicos, generalizados (sin
-  nombres ni datos de ningún caso concreto). Se le agrega una entrada cada vez
-  que aparece un patrón nuevo.
 
 ## Instalación
 
@@ -67,3 +62,7 @@ mano. Lo hace un admin de la organización, una sola vez, desde Claude Desktop:
 Fuentes: [Manage plugins for your organization](https://support.claude.com/en/articles/13837433-manage-plugins-for-your-organization),
 [Create and distribute a plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces.md),
 [GitHub integration](https://support.claude.com/en/articles/10167454-use-the-github-integration).
+
+## Licencia
+
+[Apache 2.0](./LICENSE).
