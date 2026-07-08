@@ -66,10 +66,3 @@ usuario final.
 Fuentes: [Manage plugins for your organization](https://support.claude.com/en/articles/13837433-manage-plugins-for-your-organization),
 [Create and distribute a plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces.md),
 [GitHub integration](https://support.claude.com/en/articles/10167454-use-the-github-integration).
-
-## Cómo sigue creciendo
-
-Cada vez que aparezca un error nuevo (un patrón que no esté en
-`errores-conocidos.md`) o un término que no esté en `glosario-git.md`/
-`glosario-cli.md`, se agrega ahí mismo, generalizado — así el plugin mejora con
-el uso real en vez de quedarse fijo en lo que se pensó al crearlo.
