@@ -7,7 +7,7 @@
     {
       "name": "dev-for-non-tech",
       "source": "./",
-      "description": "Guía a colaboradores no técnicos que usan Claude Code sobre un repo de git — lenguaje simple, freno antes de acciones irreversibles, lista viva de errores ya cometidos."
+      "description": "Guía a colaboradores no técnicos que empiezan a usar la terminal, Claude Code y git/GitHub — lenguaje simple, freno antes de acciones irreversibles, lista viva de errores ya cometidos."
     }
   ]
 }

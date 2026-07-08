@@ -1,22 +1,26 @@
 # dev-for-non-tech
 
 Plugin interno de Axel. Acompaña a colaboradores **no técnicos** (abogados,
-médicos, cualquier profesional sin background de desarrollo) que trabajan sobre
-un repositorio de git con ayuda de Claude Code.
+médicos, cualquier profesional sin background de desarrollo) que empiezan a usar
+la terminal, Claude Code y git/GitHub.
 
 No enseña a programar. Enseña a **no asumir** que quien está del otro lado
-entiende jerga de git/GitHub, y a **frenar y explicar en lenguaje simple antes**
-de cualquier acción irreversible o que afecte a otros colaboradores — en vez de
-descubrirlo después.
+entiende jerga de terminal/git/GitHub, y a **frenar y explicar en lenguaje
+simple antes** de cualquier acción irreversible o que afecte a otros
+colaboradores — en vez de descubrirlo después.
 
 ## Qué incluye
 
-- **`skills/pair-with-non-technical/`** — la skill principal: traduce cada
-  operación de git a lenguaje llano antes de ejecutarla, y aplica una lista viva
-  de errores ya cometidos para no repetirlos.
-- **`references/glosario-git.md`** — banco de traducciones a lenguaje simple para
-  los términos de git que más se repiten (push, force-push, rebase, branch,
-  .gitignore, etc.). Crece con cada término nuevo que haga falta explicar.
+- **`skills/pair-with-non-technical/`** — la skill principal: cubre los primeros
+  pasos con la terminal y Claude Code (qué es un comando, qué significa el
+  cartel de permiso, cómo salir sin miedo) y traduce cada operación de git a
+  lenguaje llano antes de ejecutarla, aplicando una lista viva de errores ya
+  cometidos para no repetirlos.
+- **`references/glosario-cli.md`** — banco de traducciones a lenguaje simple para
+  los términos de terminal/Claude Code que más se repiten (comando, flag, ruta,
+  sesión, permisos, proceso, etc.).
+- **`references/glosario-git.md`** — lo mismo para los términos de git que más se
+  repiten (push, force-push, rebase, branch, .gitignore, etc.).
 - **`references/errores-conocidos.md`** — catálogo vivo de errores reales ya
   cometidos en sesiones con colaboradores no técnicos, generalizados (sin
   nombres ni datos de ningún caso concreto). Se le agrega una entrada cada vez
@@ -37,6 +41,6 @@ nombre, aunque también se puede pedir explícitamente.
 ## Cómo sigue creciendo
 
 Cada vez que aparezca un error nuevo (un patrón que no esté en
-`errores-conocidos.md`) o un término que no esté en `glosario-git.md`, se agrega
-ahí mismo, generalizado — así el plugin mejora con el uso real en vez de
-quedarse fijo en lo que se pensó al crearlo.
+`errores-conocidos.md`) o un término que no esté en `glosario-git.md`/
+`glosario-cli.md`, se agrega ahí mismo, generalizado — así el plugin mejora con
+el uso real en vez de quedarse fijo en lo que se pensó al crearlo.

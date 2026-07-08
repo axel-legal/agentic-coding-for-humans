@@ -1,32 +1,37 @@
 ---
 name: pair-with-non-technical
 description: >
-  Guía cómo trabajar con git/GitHub cuando el colaborador que está del otro lado (o
-  vos mismo) no tiene background técnico — es abogado, médico, u otro profesional
-  sin experiencia de desarrollo. Traduce cada operación de git a lenguaje simple
-  antes de ejecutarla, frena y explica antes de cualquier acción irreversible o que
-  afecte a otros colaboradores, y aplica una lista viva de errores ya cometidos
-  (`references/errores-conocidos.md`) para no repetirlos. Úsala cuando el usuario
-  mencione que no es técnico/programador, que está aprendiendo git, cuando el repo
-  tiene colaboradores no técnicos, o antes de commits/pushes/operaciones de git en
-  cualquier proyecto donde esto aplique.
+  Guía cómo trabajar con la terminal, Claude Code y git/GitHub cuando el
+  colaborador que está del otro lado (o vos mismo) no tiene background técnico —
+  es abogado, médico, u otro profesional sin experiencia de desarrollo. Traduce
+  cada comando u operación a lenguaje simple antes de ejecutarla, frena y explica
+  antes de cualquier acción irreversible o que afecte a otros colaboradores, y
+  aplica una lista viva de errores ya cometidos (`references/errores-conocidos.md`)
+  para no repetirlos. Úsala cuando el usuario mencione que no es técnico/programador,
+  que está empezando a usar Claude Code o la terminal por primera vez, que está
+  aprendiendo git, cuando el repo tiene colaboradores no técnicos, o antes de
+  comandos/commits/pushes en cualquier proyecto donde esto aplique.
 user-invocable: true
 ---
 
 # Acompañar a un colaborador no técnico
 
 Esta skill no enseña a programar — enseña a **no asumir** que quien está del otro
-lado entiende jerga de git/GitHub, y a **frenar antes de lo irreversible** en vez
-de después.
+lado entiende jerga de terminal/git/GitHub, y a **frenar antes de lo irreversible**
+en vez de después.
 
 ## Cuándo aplica
 
 - El usuario dice explícitamente que no es programador/developer, o que es
   abogado/médico/otro profesional trabajando con Claude Code por primera vez.
+- Es la **primera vez que alguien usa la terminal o Claude Code** — antes incluso
+  de que haya un repo o una operación de git de por medio (ver "Primeros pasos"
+  abajo).
 - Hay un repo con más de un colaborador y al menos uno no es técnico.
-- Cualquier momento en que estés por ejecutar una operación de git — no hace falta
-  que el usuario la pida por nombre técnico ("hacé un rebase"), alcanza con que la
-  intención sea esa ("que quede limpio", "sácalo de todos lados").
+- Cualquier momento en que estés por ejecutar un comando o una operación de git —
+  no hace falta que el usuario lo pida por nombre técnico ("hacé un rebase"),
+  alcanza con que la intención sea esa ("que quede limpio", "sácalo de todos
+  lados").
 
 ## Mandato central
 
@@ -39,6 +44,42 @@ solo por haberla nombrado.
 No hay atajos: si el colaborador no técnico dice "sí, dale" a algo que no le
 explicaste en sus términos, esa confirmación no cuenta — hay que volver a explicar
 hasta que la decisión sea informada, no solo autorizada.
+
+## Primeros pasos con la terminal y Claude Code
+
+Antes de la primera vez que alguien use la terminal o Claude Code, explicar (sin
+que lo pidan) estas cuatro cosas — evita el miedo a "romper algo" que frena a
+cualquier persona no técnica en su primera sesión:
+
+1. **Qué es la terminal:** una ventana donde le escribís instrucciones a la
+   computadora en vez de hacer clic — no es distinto en el fondo a usar una app,
+   solo que se "habla" escribiendo.
+2. **La diferencia entre charlar con Claude y que Claude ejecute algo real:**
+   cuando escribís un mensaje, es una conversación. Cuando Claude quiere correr un
+   comando (crear un archivo, bajar algo de internet, borrar algo), eso es una
+   **acción real en la computadora** — por eso aparece un cartel pidiendo permiso
+   antes.
+3. **Qué es ese cartel de permiso y qué hacer con él:** existe justamente para que
+   nada pase sin que lo veas primero. Si no entendés qué va a hacer el comando que
+   te está pidiendo aprobar, **está bien decir que no, o pedir que te lo expliquen
+   antes** — no hay que aprobar algo solo porque Claude lo sugirió.
+4. **Cómo salir/interrumpir sin miedo:** `Ctrl+C` interrumpe lo que está corriendo
+   sin romper nada; escribir `/exit` (o cerrar la ventana) termina la sesión, y el
+   trabajo que ya quedó guardado en archivos sigue ahí — no se pierde por cerrar
+   la sesión (si algo era importante y no se guardó en un archivo, eso sí se
+   pierde: aclarar esa diferencia la primera vez que se toca el tema).
+
+Reglas adicionales:
+- **Nunca pegar un comando copiado de internet (o de otro lado) sin que se
+  explique primero qué hace** — el mismo mandato central de esta skill aplica a
+  cualquier comando de terminal, no solo a git.
+- Usá `references/glosario-cli.md` como banco de traducciones para los términos
+  de terminal que se repiten (comando, flag, ruta, sesión, proceso, permisos,
+  etc.) — agregale una entrada nueva cuando expliques un término que no está ahí
+  todavía, igual que con el glosario de git.
+- Esta introducción se da **una vez por persona**, no una vez por sesión — pero
+  si en una sesión nueva la persona muestra que no recuerda algo de esto, se
+  repite sin asumir que "ya lo sabe".
 
 ## Cómo traducir, no solo explicar
 
