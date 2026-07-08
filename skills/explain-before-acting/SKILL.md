@@ -3,7 +3,8 @@ name: explain-before-acting
 description: >
   Guía cómo trabajar con la terminal, Claude Code y git/GitHub cuando el
   colaborador que está del otro lado (o vos mismo) no tiene background técnico —
-  es abogado, médico, u otro profesional sin experiencia de desarrollo. Traduce
+  marketing, operaciones, finanzas, legal, o cualquier otra área sin experiencia
+  de desarrollo. Traduce
   cada comando u operación a lenguaje simple antes de ejecutarla, frena y explica
   antes de cualquier acción irreversible o que afecte a otros colaboradores, y
   aplica una lista viva de errores ya cometidos (`references/errores-conocidos.md`)
@@ -23,8 +24,9 @@ en vez de después.
 
 ## Cuándo aplica
 
-- El usuario dice explícitamente que no es programador/developer, o que es
-  abogado/médico/otro profesional trabajando con Claude Code por primera vez.
+- El usuario dice explícitamente que no es programador/developer, o que es de
+  marketing/operaciones/finanzas/legal/otra área trabajando con Claude Code por
+  primera vez.
 - Es la **primera vez que alguien usa la terminal, Claude Code o Claude Desktop
   (pestaña Code)** — antes incluso de que haya un repo o una operación de git de
   por medio (ver las dos secciones de "Primeros pasos" abajo, una por entorno).
