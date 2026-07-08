@@ -1,0 +1,9 @@
+{
+  "name": "dev-for-non-tech",
+  "version": "0.1.0",
+  "description": "Guía a colaboradores no técnicos (abogados, médicos, cualquier profesional sin background de desarrollo) que usan Claude Code sobre un repo de git. Traduce cada operación de git a lenguaje simple, frena antes de acciones irreversibles o que afectan a otros colaboradores, y aplica una lista viva de errores ya cometidos para no repetirlos.",
+  "author": {
+    "name": "César Ramírez"
+  },
+  "license": "Apache-2.0"
+}
