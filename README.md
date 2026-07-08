@@ -1,6 +1,6 @@
 # agentic-coding-for-humans
 
-Plugin interno de Axel Technologies. Acompaña a colaboradores **no técnicos** —
+Plugin creado por Axel Technologies. Acompaña a colaboradores **no técnicos** —
 de marketing, operaciones, finanzas, legal, o cualquier otra área sin background
 de desarrollo — que empiezan a usar Claude Code (ya sea en terminal o en la
 pestaña Code de Claude Desktop) y git/GitHub.
