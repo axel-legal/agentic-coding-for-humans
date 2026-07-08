@@ -2,7 +2,8 @@
 
 Plugin interno de Axel. Acompaña a colaboradores **no técnicos** (abogados,
 médicos, cualquier profesional sin background de desarrollo) que empiezan a usar
-la terminal, Claude Code y git/GitHub.
+Claude Code — ya sea en terminal o en la pestaña Code de Claude Desktop — y
+git/GitHub.
 
 No enseña a programar. Enseña a **no asumir** que quien está del otro lado
 entiende jerga de terminal/git/GitHub, y a **frenar y explicar en lenguaje
@@ -12,10 +13,10 @@ colaboradores — en vez de descubrirlo después.
 ## Qué incluye
 
 - **`skills/pair-with-non-technical/`** — la skill principal: cubre los primeros
-  pasos con la terminal y Claude Code (qué es un comando, qué significa el
-  cartel de permiso, cómo salir sin miedo) y traduce cada operación de git a
-  lenguaje llano antes de ejecutarla, aplicando una lista viva de errores ya
-  cometidos para no repetirlos.
+  pasos tanto en terminal como en Claude Desktop (pestaña Code) — qué es un
+  comando, qué significa el cartel de permiso en cada entorno, cómo salir sin
+  miedo — y traduce cada operación de git a lenguaje llano antes de ejecutarla,
+  aplicando una lista viva de errores ya cometidos para no repetirlos.
 - **`references/glosario-cli.md`** — banco de traducciones a lenguaje simple para
   los términos de terminal/Claude Code que más se repiten (comando, flag, ruta,
   sesión, permisos, proceso, etc.).

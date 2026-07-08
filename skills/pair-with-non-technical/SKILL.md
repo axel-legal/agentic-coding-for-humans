@@ -8,9 +8,10 @@ description: >
   antes de cualquier acción irreversible o que afecte a otros colaboradores, y
   aplica una lista viva de errores ya cometidos (`references/errores-conocidos.md`)
   para no repetirlos. Úsala cuando el usuario mencione que no es técnico/programador,
-  que está empezando a usar Claude Code o la terminal por primera vez, que está
-  aprendiendo git, cuando el repo tiene colaboradores no técnicos, o antes de
-  comandos/commits/pushes en cualquier proyecto donde esto aplique.
+  que está empezando a usar Claude Code (en terminal o en la pestaña Code de
+  Claude Desktop) por primera vez, que está aprendiendo git, cuando el repo tiene
+  colaboradores no técnicos, o antes de comandos/commits/pushes en cualquier
+  proyecto donde esto aplique.
 user-invocable: true
 ---
 
@@ -24,9 +25,9 @@ en vez de después.
 
 - El usuario dice explícitamente que no es programador/developer, o que es
   abogado/médico/otro profesional trabajando con Claude Code por primera vez.
-- Es la **primera vez que alguien usa la terminal o Claude Code** — antes incluso
-  de que haya un repo o una operación de git de por medio (ver "Primeros pasos"
-  abajo).
+- Es la **primera vez que alguien usa la terminal, Claude Code o Claude Desktop
+  (pestaña Code)** — antes incluso de que haya un repo o una operación de git de
+  por medio (ver las dos secciones de "Primeros pasos" abajo, una por entorno).
 - Hay un repo con más de un colaborador y al menos uno no es técnico.
 - Cualquier momento en que estés por ejecutar un comando o una operación de git —
   no hace falta que el usuario lo pida por nombre técnico ("hacé un rebase"),
@@ -80,6 +81,43 @@ Reglas adicionales:
 - Esta introducción se da **una vez por persona**, no una vez por sesión — pero
   si en una sesión nueva la persona muestra que no recuerda algo de esto, se
   repite sin asumir que "ya lo sabe".
+
+## Primeros pasos con Claude Desktop (pestaña Code)
+
+Si el colaborador usa **Claude Desktop** en vez de una terminal — específicamente
+la pestaña **Code** de la app (distinta de Chat y de Cowork) — la experiencia se
+ve distinta aunque el mandato central es el mismo. No asumas que lo de la
+terminal aplica igual; confirmá primero cuál de las dos está usando.
+
+Lo que cambia concretamente:
+
+1. **No hay ventana de texto tipo terminal** — la pestaña Code muestra el chat a
+   la izquierda y paneles (diff, editor, archivo, vista previa, y sí, también un
+   panel de terminal si hace falta) a la derecha, que se pueden arrastrar y
+   acomodar. Al abrir una sesión, se elige la carpeta/repo sobre la que va a
+   trabajar.
+2. **El cartel de permiso es el mismo concepto, otra forma:** aparece un diálogo
+   en la propia interfaz ("Permission required") con un botón para aprobar esa
+   acción puntual, o para rechazar. Existe un "modo automático" (se alterna con
+   `Shift+Tab`) que aprueba solo, salvo en acciones más riesgosas — no activarlo
+   sin explicar qué significa "aprobar todo lo rutinario sin preguntar".
+3. **Para interrumpir algo en curso:** `Escape` es la tecla confiable en esta
+   interfaz (no `Ctrl+C`, que en Desktop es menos consistente).
+4. **Nueva sesión / cerrar:** `Cmd+N` (Mac) o `Ctrl+N` (Windows) abre una sesión
+   nueva; cerrar la pestaña termina esa sesión. **No tengo confirmado** cómo se
+   retoma exactamente una sesión anterior en esta interfaz (a diferencia de la
+   terminal, que tiene `--resume`) — si esto importa, verificarlo en el momento
+   en vez de asumir un mecanismo.
+5. **Local vs. remoto:** Desktop puede correr la sesión en tu propia computadora
+   (accede a los archivos reales, tal cual están) o en la infraestructura de
+   Anthropic (sigue corriendo aunque cierres la app). Confirmar cuál de los dos
+   modos está activo antes de asumir que "cerrar la app" detiene el trabajo.
+
+**No descartar la terminal:** aunque hoy el colaborador use Desktop/Code, la
+sección "Primeros pasos con la terminal y Claude Code" de arriba sigue siendo
+válida si en algún momento decide explorar la terminal directamente — no es una
+alternativa mutuamente excluyente, son dos entornos distintos con el mismo
+mandato central.
 
 ## Cómo traducir, no solo explicar
 
