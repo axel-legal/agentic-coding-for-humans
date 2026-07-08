@@ -29,7 +29,7 @@ skill sola cuando detecta la situación (el usuario dice que no es programador,
 hay una operación de git de por medio, etc.) — no hace falta invocarla por
 nombre, aunque también se puede pedir explícitamente.
 
-### Individual (cualquier plan de Claude)
+### Individual (cualquier plan de Claude, incluido Free)
 
 **Claude Code (CLI):**
 ```
@@ -37,13 +37,18 @@ nombre, aunque también se puede pedir explícitamente.
 /plugin install agentic-coding-for-humans
 ```
 
-**Claude Desktop:** panel izquierdo → **Customize** → **Skills** → agregar como
-plugin personal apuntando al repo.
+**Claude Desktop:** el `+` para agregar un **"plugin"** de marketplace (con
+GitHub App conectada) requiere plan Pro/Team. Pero la carpeta
+`skills/explain-before-acting/` es, en el fondo, un **skill** suelto en formato
+`SKILL.md` — y esos sí se agregan en cuenta Free, sin organización, desde
+Claude Desktop → panel izquierdo → **Customize** → **Skills**.
 
-**Sin pasar por "plugin" en absoluto:** cloná el repo y copiá la carpeta
-`skills/explain-before-acting/` a `~/.claude/skills/` (o el equivalente de tu
-agente — Codex, OpenCode, etc. leen el mismo formato `SKILL.md`). Claude la
-detecta sola, sin necesidad de marketplace.
+**Sin pasar por la UI en absoluto:** cloná el repo y copiá la carpeta
+`skills/explain-before-acting/` a `~/.claude/skills/` a mano (o el equivalente
+de tu agente — Codex, OpenCode, etc. leen el mismo formato `SKILL.md`). Es la
+vía más segura si no aparece un botón directo para agregarlo por URL — para
+alguien sin experiencia de terminal, puede ser más fácil pedirle este paso
+puntual a alguien que sí la use, una sola vez.
 
 ### Organización (plan Claude Team o Enterprise)
 
