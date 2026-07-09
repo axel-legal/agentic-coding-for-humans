@@ -25,12 +25,26 @@ copiar tal cual a cualquier agente compatible con `SKILL.md`:
 - **`references/glosario-git.md`** — lo mismo para los términos de git que más se
   repiten (push, force-push, rebase, branch, .gitignore, etc.).
 
-## Instalación
+## Cómo se usa
 
-Al usarse en cualquier proyecto con un colaborador no técnico, Claude activa la
-skill sola cuando detecta la situación (el usuario dice que no es programador,
-hay una operación de git de por medio, etc.) — no hace falta invocarla por
-nombre, aunque también se puede pedir explícitamente.
+No hace falta invocarla por nombre ni aprenderse un comando — una vez
+instalada, Claude la activa sola cuando detecta la situación. Ejemplos reales
+de mensajes que la disparan:
+
+- **"No sé programar, ayudame a subir estos cambios a GitHub"** → antes de
+  hacer `commit`/`push`, Claude explica en lenguaje simple qué va a pasar y
+  espera confirmación, en vez de asumir que ya se entendió.
+- **"Es la primera vez que uso esto"** → dispara la introducción de primeros
+  pasos (qué es un comando, qué significa el cartel de permiso, cómo salir sin
+  romper nada) antes de que haga falta.
+- **"Borrá todo y empezá de nuevo"** o cualquier pedido que implique algo
+  irreversible → la skill frena, explica el efecto real (qué se pierde, a
+  quién más afecta) y pide confirmación explícita antes de ejecutar.
+
+También se puede pedir directo: **"actuá según la skill agentic-coding-for-humans"**
+o simplemente **"explicame esto en términos simples"**.
+
+## Instalación
 
 ### Individual (cualquier plan de Claude, incluido Free)
 
