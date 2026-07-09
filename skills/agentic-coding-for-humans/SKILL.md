@@ -1,5 +1,5 @@
 ---
-name: explain-before-acting
+name: agentic-coding-for-humans
 description: >
   Guía cómo trabajar con la terminal, Claude Code y git/GitHub cuando el
   colaborador que está del otro lado (o vos mismo) no tiene background técnico —
