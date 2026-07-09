@@ -12,8 +12,8 @@ colaboradores — en vez de descubrirlo después.
 
 ## Qué incluye
 
-La skill vive entera en `skills/agentic-coding-for-humans/` — carpeta autocontenida,
-lista para copiar tal cual a cualquier agente compatible con `SKILL.md`:
+Es un plugin de una sola skill — vive entera en la raíz del repo, lista para
+copiar tal cual a cualquier agente compatible con `SKILL.md`:
 
 - **`SKILL.md`** — la lógica principal: cubre los primeros pasos tanto en
   terminal como en Claude Desktop (pestaña Code) — qué es un comando, qué
@@ -41,15 +41,15 @@ nombre, aunque también se puede pedir explícitamente.
 ```
 
 **Claude Desktop:** el `+` para agregar un **"plugin"** de marketplace (con
-GitHub App conectada) requiere plan Pro/Team. Pero la carpeta
-`skills/agentic-coding-for-humans/` es, en el fondo, un **skill** suelto en formato
-`SKILL.md` — y esos sí se agregan en cuenta Free, sin organización, desde
-Claude Desktop → panel izquierdo → **Customize** → **Skills**.
+GitHub App conectada) requiere plan Pro/Team. Pero este repo es, en el fondo,
+un **skill** suelto en formato `SKILL.md` — y esos sí se agregan en cuenta
+Free, sin organización, desde Claude Desktop → panel izquierdo →
+**Customize** → **Skills**.
 
-**Sin pasar por la UI en absoluto:** cloná el repo y copiá la carpeta
-`skills/agentic-coding-for-humans/` a `~/.claude/skills/` a mano (o el equivalente
-de tu agente — Codex, OpenCode, etc. leen el mismo formato `SKILL.md`). Es la
-vía más segura si no aparece un botón directo para agregarlo por URL — para
+**Sin pasar por la UI en absoluto:** cloná el repo entero y copiálo a
+`~/.claude/skills/agentic-coding-for-humans/` a mano (o el equivalente de tu
+agente — Codex, OpenCode, etc. leen el mismo formato `SKILL.md`). Es la vía
+más segura si no aparece un botón directo para agregarlo por URL — para
 alguien sin experiencia de terminal, puede ser más fácil pedirle este paso
 puntual a alguien que sí la use, una sola vez.
 

@@ -1,7 +1,7 @@
 {
   "name": "agentic-coding-for-humans",
   "version": "0.1.0",
-  "description": "Guía a colaboradores no técnicos (marketing, operaciones, finanzas, legal, o cualquier otra área sin background de desarrollo) que empiezan a usar la terminal, Claude Code y git/GitHub. Traduce cada comando u operación a lenguaje simple, frena antes de acciones irreversibles o que afectan a otros colaboradores, y aplica una lista viva de errores ya cometidos para no repetirlos.",
+  "description": "Guía a colaboradores no técnicos (marketing, operaciones, finanzas, legal, o cualquier otra área sin background de desarrollo) que empiezan a usar la terminal, Claude Code y git/GitHub. Traduce cada comando u operación a lenguaje simple, y frena y explica antes de acciones irreversibles o que afectan a otros colaboradores.",
   "author": {
     "name": "Axel Technologies"
   },
