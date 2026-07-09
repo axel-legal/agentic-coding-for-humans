@@ -12,10 +12,13 @@ colaboradores — en vez de descubrirlo después.
 
 ## Qué incluye
 
-- **`skills/explain-before-acting/`** — la skill principal: cubre los primeros
-  pasos tanto en terminal como en Claude Desktop (pestaña Code) — qué es un
-  comando, qué significa el cartel de permiso en cada entorno, cómo salir sin
-  miedo — y traduce cada operación de git a lenguaje llano antes de ejecutarla.
+La skill vive entera en `skills/explain-before-acting/` — carpeta autocontenida,
+lista para copiar tal cual a cualquier agente compatible con `SKILL.md`:
+
+- **`SKILL.md`** — la lógica principal: cubre los primeros pasos tanto en
+  terminal como en Claude Desktop (pestaña Code) — qué es un comando, qué
+  significa el cartel de permiso en cada entorno, cómo salir sin miedo — y
+  traduce cada operación de git a lenguaje llano antes de ejecutarla.
 - **`references/glosario-cli.md`** — banco de traducciones a lenguaje simple para
   los términos de terminal/Claude Code que más se repiten (comando, flag, ruta,
   sesión, permisos, proceso, etc.).
