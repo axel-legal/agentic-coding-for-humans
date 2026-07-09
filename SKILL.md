@@ -9,8 +9,10 @@ description: >
   afecte a otros colaboradores. Úsala cuando el usuario mencione que no es
   técnico/programador, que está empezando a usar Claude Code (en terminal o en
   la pestaña Code de Claude Desktop) por primera vez, que está aprendiendo git,
-  cuando el repo tiene colaboradores no técnicos, o antes de
-  comandos/commits/pushes en cualquier proyecto donde esto aplique.
+  cuando el repo tiene colaboradores no técnicos, antes de
+  comandos/commits/pushes en cualquier proyecto donde esto aplique, o cuando
+  piden auditar un repo existente antes de hacerlo público o de sumar un
+  colaborador.
 user-invocable: true
 ---
 
@@ -33,6 +35,9 @@ en vez de después.
   no hace falta que el usuario lo pida por nombre técnico ("hacé un rebase"),
   alcanza con que la intención sea esa ("que quede limpio", "sácalo de todos
   lados").
+- Piden auditar un repo ya existente — "¿está listo para ser público?", "revisá
+  antes de agregar a alguien" (ver "Auditar un repo existente" abajo — es un
+  chequeo retroactivo, distinto de vigilar una acción en curso).
 
 ## Mandato central
 
@@ -153,6 +158,37 @@ Antes de commitear, pushear, o mover archivos, tené presentes estas categorías
    local-only) sin explicar que eso significa "no hay respaldo ni se comparte".
 6. Usar un atajo destructivo para resolver un obstáculo en vez de investigar la
    causa raíz.
+
+## Auditar un repo existente (antes de hacerlo público, o de sumar un colaborador)
+
+Todo lo de arriba previene errores **nuevos**, durante una acción en curso. Pero
+si te piden "auditá este repo", "¿está listo para ser público?", o "revisá antes
+de agregar a alguien" — es un pedido distinto: buscar problemas que **ya están**
+ahí desde antes, no vigilar lo que se hace ahora.
+
+**No alcanza con mirar el árbol de archivos actual.** Algo puede haberse
+sacado de los archivos de hoy y seguir existiendo en un commit viejo — el
+único lugar donde de verdad desapareció es si se reescribió la historia
+(ver "reescribir el historial" en `references/glosario-git.md`). Por eso:
+
+1. **Grep del árbol actual** por las categorías de riesgo de arriba: nombres
+   reales, emails, rutas de máquina local, credenciales/tokens, notas de
+   sesión (`ESTADO*.md`, `NOTAS*.md`, `TODO*.md` sueltos en la raíz).
+2. **Grep de todo el historial de git**, no solo del presente —
+   `git log --all -p` (o `git log --all --format=... | grep` para mensajes de
+   commit) con los mismos patrones. Un dato puede estar limpio hoy y seguir
+   expuesto en un commit de hace 10 versiones.
+3. **Referencias cruzadas rotas** — archivos que un `README`/`SKILL.md`
+   menciona por ruta, pero que se movieron o borraron después. Revisar que
+   cada ruta mencionada exista de verdad.
+4. **Reportar, no corregir solo.** Entregá la lista de hallazgos con archivo y
+   línea — cualquier corrección que implique reescribir historia o forzar un
+   push sigue pasando por el **Mandato central** de arriba (explicar y
+   confirmar), no se dispara automático solo porque el hallazgo parezca obvio.
+5. **Sé honesto sobre el alcance** — decí explícitamente qué se revisó y qué
+   no (¿todo el historial o solo los últimos commits? ¿se probó clonar sin
+   credenciales para confirmar que de verdad no pide nada?), en vez de sonar
+   exhaustivo cuando la revisión fue parcial.
 
 ## Detectar el error en curso, no solo el ya cometido
 

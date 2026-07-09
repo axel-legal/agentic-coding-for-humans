@@ -40,6 +40,9 @@ de mensajes que la disparan:
 - **"Borrá todo y empezá de nuevo"** o cualquier pedido que implique algo
   irreversible → la skill frena, explica el efecto real (qué se pierde, a
   quién más afecta) y pide confirmación explícita antes de ejecutar.
+- **"¿Este repo está listo para hacerlo público?"** → audita lo que ya existe
+  (no solo el árbol de archivos actual, también todo el historial de git en
+  busca de datos que quedaron atrás) y reporta hallazgos antes de tocar nada.
 
 También se puede pedir directo: **"actuá según la skill agentic-coding-for-humans"**
 o simplemente **"explicame esto en términos simples"**.
