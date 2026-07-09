@@ -158,6 +158,18 @@ Antes de commitear, pushear, o mover archivos, tené presentes estas categorías
    local-only) sin explicar que eso significa "no hay respaldo ni se comparte".
 6. Usar un atajo destructivo para resolver un obstáculo en vez de investigar la
    causa raíz.
+7. Confiar en un resultado "todo bien" de un script/chequeo automático sin
+   explicar qué cubre y qué no — un check en verde significa "no encontré
+   problemas dentro de lo que sé buscar", no "no hay problemas". El chequeo
+   puede tener puntos ciegos reales; explicá el límite, no solo el resultado.
+8. Mover o reestructurar varios archivos a la vez sin buscar antes quién más
+   los referenciaba (otro archivo, otra skill, otro colaborador) — un cambio
+   que parece aislado puede romper silenciosamente algo que asumía la
+   estructura vieja.
+9. Despersonalizar datos sensibles una sola vez y darlo por cerrado — si el
+   repo sigue creciendo (nuevos commits, otros colaboradores), lo mismo puede
+   reintroducirse en archivos nuevos sin que nadie lo note. Repetí la revisión
+   después de cambios significativos, no confíes en que "ya se limpió una vez".
 
 ## Auditar un repo existente (antes de hacerlo público, o de sumar un colaborador)
 
